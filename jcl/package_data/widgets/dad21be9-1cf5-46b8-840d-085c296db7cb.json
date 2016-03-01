@@ -1,0 +1,124 @@
+[
+  {
+    "model": "workflows.abstractwidget", 
+    "fields": {
+      "category": "de7f5a82-ecd9-462f-bfec-903365bc39fa", 
+      "treeview_image": "", 
+      "uid": "dad21be9-1cf5-46b8-840d-085c296db7cb", 
+      "windows_queue": false, 
+      "package": "jcl", 
+      "interaction_view": "", 
+      "has_progress_bar": false, 
+      "image": "", 
+      "description": "", 
+      "static_image": "", 
+      "action": "jcl_som", 
+      "visualization_view": "", 
+      "streaming_visualization_view": "", 
+      "post_interact_action": "", 
+      "wsdl_method": "", 
+      "wsdl": "", 
+      "interactive": false, 
+      "is_streaming": false, 
+      "order": 1, 
+      "name": "S.O.M."
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "dad21be9-1cf5-46b8-840d-085c296db7cb", 
+      "name": "Nb. Steps", 
+      "short_name": "nst", 
+      "default": "10", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "nb_steps", 
+      "parameter": true, 
+      "order": 2, 
+      "uid": "0665a387-11b8-47c1-830c-8554a136a416"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "dad21be9-1cf5-46b8-840d-085c296db7cb", 
+      "name": "Width", 
+      "short_name": "wdt", 
+      "default": "3", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "width", 
+      "parameter": true, 
+      "order": 4, 
+      "uid": "b26cd1fc-9a76-4115-8f93-c8a5dc44e664"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "dad21be9-1cf5-46b8-840d-085c296db7cb", 
+      "name": "Height", 
+      "short_name": "hgt", 
+      "default": "3", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "height", 
+      "parameter": true, 
+      "order": 3, 
+      "uid": "c9a9f4ce-e447-4bc0-831c-830074acd5bc"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "dad21be9-1cf5-46b8-840d-085c296db7cb", 
+      "name": "Epsilon", 
+      "short_name": "eps", 
+      "default": "1", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "epsilon", 
+      "parameter": true, 
+      "order": 5, 
+      "uid": "ec716f31-ddeb-4d71-b65b-7e73c40153c6"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "dad21be9-1cf5-46b8-840d-085c296db7cb", 
+      "name": "Arff file", 
+      "short_name": "arf", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "file", 
+      "variable": "arff_file", 
+      "parameter": false, 
+      "order": 1, 
+      "uid": "fc0bfec2-84c8-4027-a999-0fb98da1d341"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoutput", 
+    "fields": {
+      "widget": "dad21be9-1cf5-46b8-840d-085c296db7cb", 
+      "name": "Agent", 
+      "short_name": "agt", 
+      "description": "", 
+      "variable": "agent", 
+      "order": 1, 
+      "uid": "89b4ce32-14f7-4fcf-a9d5-437f443adeb9"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "model": "workflows.category", 
+  "fields": {
+    "name": "Single strategy", 
+    "parent": "b36dcb25-25c6-43d9-8bd1-6cb2cd5c270f", 
+    "order": 1, 
+    "uid": "de7f5a82-ecd9-462f-bfec-903365bc39fa"
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "model": "workflows.abstractwidget", 
+    "fields": {
+      "category": "de7f5a82-ecd9-462f-bfec-903365bc39fa", 
+      "treeview_image": "", 
+      "uid": "fb14b0e0-cddc-4a52-b714-54ee8a58ecf9", 
+      "windows_queue": false, 
+      "package": "jcl", 
+      "interaction_view": "", 
+      "has_progress_bar": false, 
+      "image": "", 
+      "description": "", 
+      "static_image": "", 
+      "action": "jcl_kmeans", 
+      "visualization_view": "", 
+      "streaming_visualization_view": "", 
+      "post_interact_action": "", 
+      "wsdl_method": "", 
+      "wsdl": "", 
+      "interactive": false, 
+      "is_streaming": false, 
+      "order": 1, 
+      "name": "Kmeans"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "fb14b0e0-cddc-4a52-b714-54ee8a58ecf9", 
+      "name": "Nb. Steps", 
+      "short_name": "nst", 
+      "default": "1", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "nb_steps", 
+      "parameter": true, 
+      "order": 3, 
+      "uid": "8b70d881-d366-4ed3-b10e-a9716427d174"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "fb14b0e0-cddc-4a52-b714-54ee8a58ecf9", 
+      "name": "Nb. Seeds", 
+      "short_name": "nsd", 
+      "default": "2", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "nb_seeds", 
+      "parameter": true, 
+      "order": 2, 
+      "uid": "b08055c6-30bd-40bc-8561-21e4081ef9db"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "fb14b0e0-cddc-4a52-b714-54ee8a58ecf9", 
+      "name": "Arff file", 
+      "short_name": "arf", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "file", 
+      "variable": "arff_file", 
+      "parameter": false, 
+      "order": 1, 
+      "uid": "e2378cba-0495-4d1e-9bbb-5b2a09b9d5b1"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoutput", 
+    "fields": {
+      "widget": "fb14b0e0-cddc-4a52-b714-54ee8a58ecf9", 
+      "name": "Agent", 
+      "short_name": "agt", 
+      "description": "", 
+      "variable": "agent", 
+      "order": 1, 
+      "uid": "b90b2b90-4ae5-420b-8ab6-c7a7644f38f8"
+    }
+  }
+]

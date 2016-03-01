@@ -1,0 +1,56 @@
+[
+  {
+    "model": "workflows.abstractwidget", 
+    "fields": {
+      "category": "b36dcb25-25c6-43d9-8bd1-6cb2cd5c270f", 
+      "treeview_image": "", 
+      "uid": "7c6e048a-b3dd-45a0-b044-03ae65e8b89b", 
+      "windows_queue": false, 
+      "package": "jcl", 
+      "interaction_view": "", 
+      "has_progress_bar": false, 
+      "image": "", 
+      "description": "", 
+      "static_image": "", 
+      "action": "jcl_classify", 
+      "visualization_view": "", 
+      "streaming_visualization_view": "", 
+      "post_interact_action": "", 
+      "wsdl_method": "", 
+      "wsdl": "", 
+      "interactive": false, 
+      "is_streaming": false, 
+      "order": 1, 
+      "name": "Classify"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "7c6e048a-b3dd-45a0-b044-03ae65e8b89b", 
+      "name": "agent", 
+      "short_name": "agt", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": null, 
+      "variable": "agent", 
+      "parameter": false, 
+      "order": 1, 
+      "uid": "d0da0d8c-1d87-40de-97e8-ffc8577b7d21"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoutput", 
+    "fields": {
+      "widget": "7c6e048a-b3dd-45a0-b044-03ae65e8b89b", 
+      "name": "arff", 
+      "short_name": "arf", 
+      "description": "", 
+      "variable": "arff_file", 
+      "order": 1, 
+      "uid": "7e6a9e2d-ac1c-4473-ae2e-2bdfcea7d55d"
+    }
+  }
+]

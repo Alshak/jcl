@@ -1,0 +1,56 @@
+[
+  {
+    "model": "workflows.abstractwidget", 
+    "fields": {
+      "category": "22d89c30-9025-4b14-b33c-f695f88f8dee", 
+      "treeview_image": "", 
+      "uid": "de670a77-b1ab-4499-b7f8-1ebc4e39b70a", 
+      "windows_queue": false, 
+      "package": "jcl", 
+      "interaction_view": "", 
+      "has_progress_bar": false, 
+      "image": "", 
+      "description": "", 
+      "static_image": "", 
+      "action": "jcl_samarah", 
+      "visualization_view": "", 
+      "streaming_visualization_view": "", 
+      "post_interact_action": "", 
+      "wsdl_method": "", 
+      "wsdl": "", 
+      "interactive": false, 
+      "is_streaming": false, 
+      "order": 1, 
+      "name": "Samarah"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "de670a77-b1ab-4499-b7f8-1ebc4e39b70a", 
+      "name": "Agents", 
+      "short_name": "agt", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": true, 
+      "parameter_type": "text", 
+      "variable": "agents", 
+      "parameter": false, 
+      "order": 1, 
+      "uid": "fc60bfcd-eaa7-4b11-a550-3d4feb1f34c3"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoutput", 
+    "fields": {
+      "widget": "de670a77-b1ab-4499-b7f8-1ebc4e39b70a", 
+      "name": "Agent", 
+      "short_name": "agt", 
+      "description": "", 
+      "variable": "agent", 
+      "order": 1, 
+      "uid": "7985eac4-99c4-40c3-9716-d0078d10cdba"
+    }
+  }
+]

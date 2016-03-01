@@ -1,0 +1,9 @@
+{
+  "model": "workflows.category", 
+  "fields": {
+    "name": "Multi strategy", 
+    "parent": "b36dcb25-25c6-43d9-8bd1-6cb2cd5c270f", 
+    "order": 1, 
+    "uid": "22d89c30-9025-4b14-b33c-f695f88f8dee"
+  }
+}

@@ -1,0 +1,141 @@
+[
+  {
+    "model": "workflows.abstractwidget", 
+    "fields": {
+      "category": "de7f5a82-ecd9-462f-bfec-903365bc39fa", 
+      "treeview_image": "", 
+      "uid": "604962d4-39c2-44af-b86a-69abdbe1b550", 
+      "windows_queue": false, 
+      "package": "jcl", 
+      "interaction_view": "", 
+      "has_progress_bar": false, 
+      "image": "", 
+      "description": "", 
+      "static_image": "", 
+      "action": "jcl_cobweb", 
+      "visualization_view": "", 
+      "streaming_visualization_view": "", 
+      "post_interact_action": "", 
+      "wsdl_method": "", 
+      "wsdl": "", 
+      "interactive": false, 
+      "is_streaming": false, 
+      "order": 1, 
+      "name": "Cobweb"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "604962d4-39c2-44af-b86a-69abdbe1b550", 
+      "name": "Minimal Card", 
+      "short_name": "mcr", 
+      "default": "-1", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "minimal_card", 
+      "parameter": true, 
+      "order": 6, 
+      "uid": "1bc8c5c3-7124-48af-b0d2-736fb5290ded"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "604962d4-39c2-44af-b86a-69abdbe1b550", 
+      "name": "Mapi", 
+      "short_name": "map", 
+      "default": "0.95", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "mapi", 
+      "parameter": true, 
+      "order": 3, 
+      "uid": "33a9607a-f4dd-46e4-8fd3-38daf35ca545"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "604962d4-39c2-44af-b86a-69abdbe1b550", 
+      "name": "Arff file", 
+      "short_name": "arf", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "file", 
+      "variable": "arff_file", 
+      "parameter": false, 
+      "order": 1, 
+      "uid": "6a83ef82-1559-41ba-8755-fd526c7f7d69"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "604962d4-39c2-44af-b86a-69abdbe1b550", 
+      "name": "Nb. Steps", 
+      "short_name": "nst", 
+      "default": "2", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "nb_steps", 
+      "parameter": true, 
+      "order": 5, 
+      "uid": "ae756b65-9e39-4327-84a2-f50a3333f455"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "604962d4-39c2-44af-b86a-69abdbe1b550", 
+      "name": "Max Depth", 
+      "short_name": "dpt", 
+      "default": "6", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "max_depth", 
+      "parameter": true, 
+      "order": 4, 
+      "uid": "da167d05-20f3-41fc-9a44-f5aae6df0dc6"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "604962d4-39c2-44af-b86a-69abdbe1b550", 
+      "name": "Acuity", 
+      "short_name": "acu", 
+      "default": "20", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "acuity", 
+      "parameter": true, 
+      "order": 2, 
+      "uid": "f523b84b-8249-4fc5-af15-ef4a4d01904b"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoutput", 
+    "fields": {
+      "widget": "604962d4-39c2-44af-b86a-69abdbe1b550", 
+      "name": "Agent", 
+      "short_name": "agt", 
+      "description": "", 
+      "variable": "agent", 
+      "order": 1, 
+      "uid": "99c3050c-f6f6-4f59-aa50-8736feb25abe"
+    }
+  }
+]

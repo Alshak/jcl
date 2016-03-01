@@ -1,0 +1,9 @@
+{
+  "model": "workflows.category", 
+  "fields": {
+    "name": "JCL", 
+    "parent": null, 
+    "order": 1, 
+    "uid": "b36dcb25-25c6-43d9-8bd1-6cb2cd5c270f"
+  }
+}
