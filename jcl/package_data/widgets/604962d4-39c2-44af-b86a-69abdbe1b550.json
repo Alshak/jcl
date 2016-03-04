@@ -37,7 +37,7 @@
       "parameter_type": "text", 
       "variable": "minimal_card", 
       "parameter": true, 
-      "order": 6, 
+      "order": 7, 
       "uid": "1bc8c5c3-7124-48af-b0d2-736fb5290ded"
     }
   }, 
@@ -54,8 +54,25 @@
       "parameter_type": "text", 
       "variable": "mapi", 
       "parameter": true, 
-      "order": 3, 
+      "order": 4, 
       "uid": "33a9607a-f4dd-46e4-8fd3-38daf35ca545"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "604962d4-39c2-44af-b86a-69abdbe1b550", 
+      "name": "Weights", 
+      "short_name": "wgt", 
+      "default": "", 
+      "description": "", 
+      "required": false, 
+      "multi": false, 
+      "parameter_type": null, 
+      "variable": "weights", 
+      "parameter": false, 
+      "order": 2, 
+      "uid": "57e9ce99-6291-4223-93a3-01f2f5cf6401"
     }
   }, 
   {
@@ -88,7 +105,7 @@
       "parameter_type": "text", 
       "variable": "nb_steps", 
       "parameter": true, 
-      "order": 5, 
+      "order": 6, 
       "uid": "ae756b65-9e39-4327-84a2-f50a3333f455"
     }
   }, 
@@ -105,7 +122,7 @@
       "parameter_type": "text", 
       "variable": "max_depth", 
       "parameter": true, 
-      "order": 4, 
+      "order": 5, 
       "uid": "da167d05-20f3-41fc-9a44-f5aae6df0dc6"
     }
   }, 
@@ -122,7 +139,7 @@
       "parameter_type": "text", 
       "variable": "acuity", 
       "parameter": true, 
-      "order": 2, 
+      "order": 3, 
       "uid": "f523b84b-8249-4fc5-af15-ef4a4d01904b"
     }
   }, 

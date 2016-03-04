@@ -28,6 +28,23 @@
     "model": "workflows.abstractinput", 
     "fields": {
       "widget": "fb14b0e0-cddc-4a52-b714-54ee8a58ecf9", 
+      "name": "Weights", 
+      "short_name": "wgt", 
+      "default": "", 
+      "description": "", 
+      "required": false, 
+      "multi": false, 
+      "parameter_type": null, 
+      "variable": "weights", 
+      "parameter": false, 
+      "order": 2, 
+      "uid": "63fea36b-68cf-41e6-9720-265b74c95162"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "fb14b0e0-cddc-4a52-b714-54ee8a58ecf9", 
       "name": "Nb. Steps", 
       "short_name": "nst", 
       "default": "1", 
@@ -37,7 +54,7 @@
       "parameter_type": "text", 
       "variable": "nb_steps", 
       "parameter": true, 
-      "order": 3, 
+      "order": 4, 
       "uid": "8b70d881-d366-4ed3-b10e-a9716427d174"
     }
   }, 
@@ -54,7 +71,7 @@
       "parameter_type": "text", 
       "variable": "nb_seeds", 
       "parameter": true, 
-      "order": 2, 
+      "order": 3, 
       "uid": "b08055c6-30bd-40bc-8561-21e4081ef9db"
     }
   }, 

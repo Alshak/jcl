@@ -1,0 +1,56 @@
+[
+  {
+    "model": "workflows.abstractwidget", 
+    "fields": {
+      "category": "b36dcb25-25c6-43d9-8bd1-6cb2cd5c270f", 
+      "treeview_image": "", 
+      "uid": "5121629d-c474-489d-8a31-4ddf4268cab6", 
+      "windows_queue": false, 
+      "package": "jcl", 
+      "interaction_view": "", 
+      "has_progress_bar": false, 
+      "image": "", 
+      "description": "", 
+      "static_image": "", 
+      "action": "jcl_create_attributes_weights", 
+      "visualization_view": "", 
+      "streaming_visualization_view": "", 
+      "post_interact_action": "", 
+      "wsdl_method": "", 
+      "wsdl": "", 
+      "interactive": false, 
+      "is_streaming": false, 
+      "order": 1, 
+      "name": "Create Attributes Weights"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "5121629d-c474-489d-8a31-4ddf4268cab6", 
+      "name": "Arff file", 
+      "short_name": "arf", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": null, 
+      "variable": "arff_file", 
+      "parameter": false, 
+      "order": 1, 
+      "uid": "a8d40e6a-a7a7-4ec2-9b0d-905d5f8de92d"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoutput", 
+    "fields": {
+      "widget": "5121629d-c474-489d-8a31-4ddf4268cab6", 
+      "name": "Weights", 
+      "short_name": "wgt", 
+      "description": "", 
+      "variable": "weights", 
+      "order": 1, 
+      "uid": "b481eb8e-b109-4ef6-b72e-e2b6c449bae0"
+    }
+  }
+]

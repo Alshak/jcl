@@ -2,10 +2,8 @@ import jpype as jp
 from monostrategy import Monostrategy
 
 class Cobweb(Monostrategy):
-    def __init__(self,arff_string,acuity,mapi,max_depth,nb_steps,minimal_card):
-        Monostrategy.__init__(self, None)
-        self.dataset = None
-        self.arff_string = arff_string
+    def __init__(self,arff_string,weights,acuity,mapi,max_depth,nb_steps,minimal_card):
+        Monostrategy.__init__(self,arff_string,weights)
         self.acuity = float(acuity)
         self.mapi = float(mapi)
         self.max_depth = int(max_depth)
@@ -21,10 +19,6 @@ class Cobweb(Monostrategy):
         
         
     def get_parameters(self):
-        if not jp.isThreadAttachedToJVM():
-            jp.attachThreadToJVM()
-            
+        Monostrategy.get_parameters(self)            
         ParametersCobweb = jp.JClass('jcl.learning.methods.monostrategy.cobweb.ParametersCobweb')
-        GlobalWeights = jp.JClass('jcl.weights.GlobalWeights')
-        self.dataset = self.get_data()
-        return ParametersCobweb(self.acuity,self.mapi,self.max_depth, self.nb_steps, self.minimal_card, GlobalWeights(self.dataset));
+        return ParametersCobweb(self.acuity,self.mapi,self.max_depth, self.nb_steps, self.minimal_card, self.global_weights);

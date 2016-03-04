@@ -9,7 +9,11 @@ import tempfile
 import time
 
 class Monostrategy(object):
-    def __init__(self, params):
+    def __init__(self,arff_string,weights):
+        self.arff_string = arff_string
+        self.weights = weights        
+        self.global_weights = None
+        self.dataset = None
         return None
     
     def run(self):
@@ -26,7 +30,7 @@ class Monostrategy(object):
         temp_file_url = tempfile.mkdtemp()
         timenow = int(round(time.time() * 1000))
         output_file_url=os.path.join(temp_file_url,"result%s.arff"%str(timenow))
-        
+
         writer = ARFFWriter(output_file_url,clusRes)
         writer.write()
 
@@ -36,12 +40,28 @@ class Monostrategy(object):
         return output_file
 
     def get_method(self):
+        if not jp.isThreadAttachedToJVM():
+            jp.attachThreadToJVM()
         return None
                 
     def get_parameters(self):
+        if not jp.isThreadAttachedToJVM():
+            jp.attachThreadToJVM()
+
+        self.dataset = self.get_data()
+
+        weights = jp.JClass('jcl.weights.Weights')(len(self.dataset.getAttributesNames()))
+        
+        if self.weights != None:
+            for (att,wgt) in self.weights:
+                weights.setWeight(int(att),float(wgt))
+        self.global_weights = jp.JClass('jcl.weights.GlobalWeights')(weights)        
         return None
 
     def get_data(self):
+        if not jp.isThreadAttachedToJVM():
+            jp.attachThreadToJVM()
+            
         if self.dataset == None:
             ARFFReader = jp.JClass('jcl.io.arff.ARFFReader')   
             url = tempfile.mkdtemp()

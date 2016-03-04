@@ -37,8 +37,25 @@
       "parameter_type": "text", 
       "variable": "nb_steps", 
       "parameter": true, 
-      "order": 2, 
+      "order": 3, 
       "uid": "0665a387-11b8-47c1-830c-8554a136a416"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "dad21be9-1cf5-46b8-840d-085c296db7cb", 
+      "name": "Weights", 
+      "short_name": "wgt", 
+      "default": "", 
+      "description": "", 
+      "required": false, 
+      "multi": false, 
+      "parameter_type": null, 
+      "variable": "weights", 
+      "parameter": false, 
+      "order": 2, 
+      "uid": "7b820e41-3748-470b-afde-96d0fd936656"
     }
   }, 
   {
@@ -54,7 +71,7 @@
       "parameter_type": "text", 
       "variable": "width", 
       "parameter": true, 
-      "order": 4, 
+      "order": 5, 
       "uid": "b26cd1fc-9a76-4115-8f93-c8a5dc44e664"
     }
   }, 
@@ -71,7 +88,7 @@
       "parameter_type": "text", 
       "variable": "height", 
       "parameter": true, 
-      "order": 3, 
+      "order": 4, 
       "uid": "c9a9f4ce-e447-4bc0-831c-830074acd5bc"
     }
   }, 
@@ -88,7 +105,7 @@
       "parameter_type": "text", 
       "variable": "epsilon", 
       "parameter": true, 
-      "order": 5, 
+      "order": 6, 
       "uid": "ec716f31-ddeb-4d71-b65b-7e73c40153c6"
     }
   }, 
