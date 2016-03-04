@@ -1,7 +1,10 @@
 from django.shortcuts import render
-
-def jcl_filter_integers(request,input_dict,output_dict,widget):
-    return render(request, 'interactions/jcl_filter_integers.html',{'widget':widget,'intList':input_dict['intList']})
+from jcl.methods.create_weights import find_attributes
 
 def jcl_create_attributes_weights(request,input_dict,output_dict,widget):
-    return render(request, 'interactions/jcl_create_attributes_weights.html',{'widget':widget})
+    arff_file = input_dict['arff_file']
+    attributes_list = find_attributes(arff_file)
+    idx_attr_list = []
+    for i,attribute in enumerate(attributes_list):
+        idx_attr_list.append([i,attribute])
+    return render(request, 'interactions/jcl_create_attributes_weights.html',{'widget':widget,'idx_attr_list':idx_attr_list, 'nb_attr':len(idx_attr_list)})
