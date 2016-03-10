@@ -7,4 +7,4 @@ def jcl_create_attributes_weights(request,input_dict,output_dict,widget):
     idx_attr_list = []
     for i,attribute in enumerate(attributes_list):
         idx_attr_list.append([i,attribute])
-    return render(request, 'interactions/jcl_create_attributes_weights.html',{'widget':widget,'idx_attr_list':idx_attr_list, 'nb_attr':len(idx_attr_list)})
+    return render(request, 'interactions/jcl_create_attributes_weights.html',{'widget':widget,'attributes_list':attributes_list})

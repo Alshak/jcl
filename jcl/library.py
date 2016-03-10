@@ -56,7 +56,7 @@ def jcl_create_attributes_weights(input_dict):
 def jcl_create_attributes_weights_finished(postdata, input_dict, output_dict):
     output_dict['weights'] = []
     for idx in range(0,int(postdata['nb_attr'][0])):
-        output_dict['weights'].append([idx, int(postdata['att_%d'%idx][0])])
+        output_dict['weights'].append([idx, float(postdata['att_%d'%idx][0])])
     return output_dict
     
 def jcl_classify(input_dict):

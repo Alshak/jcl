@@ -1,10 +1,42 @@
 <div id="widgetinteract-{{widget.pk}}" rel="{{widget.pk}}" class="widgetinteractdialog" title="{{widget.name}} wants your input!">
-<form id="interactionform-{{widget.pk}}" name="interactionform-{{widget.pk}}">
-{% for i,att in idx_attr_list %}
-<label for="att_{{i}}">{{att}}</label>
-<input type="text" name="att_{{i}}" value="1" style="display:inline;width:auto;"/><br>
-{% endfor %}
-<input type="hidden" name="widget_id" value="{{widget.pk}}">
-<input type="hidden" name="nb_attr" value="{{nb_attr}}">
-</form>
-</div>
+       <div>
+	       <input type="button" value="Set all to 0" onclick="jcl_setAttributeTo(0)" />
+	       <input type="button" value="Set all to 1" onclick="jcl_setAttributeTo(1)" />
+	       <input type="button" value="Normalize" onclick="jcl_normalize()" />
+       </div>
+       <form id="interactionform-{{widget.pk}}" name="interactionform-{{widget.pk}}">
+           {% for attr_name in attributes_list %}
+               <label for="att_{{forloop.counter0}}">{{attr_name}}</label>
+               <input type="number" name="att_{{forloop.counter0}}" id="att_{{forloop.counter0}}" value="1" style="display:inline;width:auto;" step=".1"/><br>
+           {% endfor %}
+           <input type="hidden" name="widget_id" value="{{widget.pk}}">
+           <input type="hidden" id="nb_attr" name="nb_attr" value="{{attributes_list|length}}">
+       </form>
+       <script>
+       function jcl_setAttributeTo(valueToSet)
+		{
+    	    var nbAttr = document.getElementById('nb_attr').value;
+    	    for(i=0;i<nbAttr;i++){
+			    document.getElementById('att_' + i).value = valueToSet;
+    	    }
+		}
+       function jcl_normalize()
+   	    {
+	   	    var nbAttr = document.getElementById('nb_attr').value;
+	   	    var sumValues = 0.0;
+	   	    for(i=0;i<nbAttr;i++){
+	   	    	if(isNaN(parseFloat(document.getElementById('att_' + i).value)))
+	   			{
+	   	    		alert('Error: At least one of the values is not a number');
+	   	    		return;
+	  			}
+	   	    }
+	   	    for(i=0;i<nbAttr;i++){
+	   	    	sumValues = sumValues + parseFloat(document.getElementById('att_' + i).value);
+	   	    }
+	   	    for(i=0;i<nbAttr;i++){
+				    document.getElementById('att_' + i).value = parseFloat(document.getElementById('att_' + i).value) / sumValues;
+	   	    }
+		}
+       </script>
+   </div>
